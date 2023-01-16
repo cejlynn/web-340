@@ -1,0 +1,30 @@
+{
+  "name": "sports-app",
+  "version": "1.0.0",
+  "description": "An exercise to install packages.",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js", 
+  "dev": "nodemon index.js" 
+},
+    "test":
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cejlynn/web-340.git"
+  },
+  "keywords": [
+    "sports"
+  ],
+  "author": "Caitlynne Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cejlynn/web-340/issues"
+  },
+  "homepage": "https://github.com/cejlynn/web-340#readme" 
+
+  "devDependencies": {
+    "pino": "^6.13.4",
+    "moment": "^2.27.0",
+  }
