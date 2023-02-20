@@ -1,0 +1,48 @@
+<%- include('./partials/_header.ejs') %>
+
+<%- include('./partials/_navbar.ejs') %>
+
+<link rel="stylesheet" href="/styles/site.css">
+
+
+<div class="card">
+    <div class="card-content">
+      <div class="card-title"> Book an Appointment </div>
+      <hr></hr>
+      <div class="form-field">
+        <form action="/booking" method="post">
+          <label for="customerId"> Customer ID: </label>
+           <input type="text" class="input" name="customerId" id="customerId" required>
+                      </div>
+          <div class="form-field">
+            <label for="firstName">First Name: </label>
+            <input type="text" class="input" name="firstName" id="firstName" required></div>
+        
+        <div class="form-field">
+          <label for="lastName">Last Name:</label> 
+          <input type="text" class="input" name="lastName" id="lastName" required>
+        </div>
+        
+        <div class="form-field"> 
+          <label for="email">Email:</label> 
+          <input type="text" class="input" name="Email" id="Email" required> </div>
+        
+        <div class="form-field">
+          <label for="service">Service:</label>
+          <select name="service" id="service" class="drop-down-menu full-width" require> <option value="'grooming'">Grooming</option>
+                              
+                              <option value="'boarding'">Boarding</option>
+                              
+                              <option value="'training'">Training</option>
+                              
+                          </select>
+                      </div>
+  
+                      <div class="form-field">
+                          <input type="submit" value="Book Appointment" class="btn btn-primary full-width">
+                      </div>
+                  </form>
+   
+  </div></div></div>
+  
+  <%- include('./partials/_footer.ejs') %>
