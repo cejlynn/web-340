@@ -1,0 +1,43 @@
+<header><%- include('./partials/_header.ejs') %>
+
+    <%- include('./partials/_navbar.ejs') %></header>
+
+<div class="card">
+    <div class="card-content">
+        <div class="card-title">
+            Customer List 
+        </div>
+    </div>
+</div>
+
+<div class="card-content">
+    <% if(customers.length > 0) { %>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tbody>
+            <% customers.forEach(function(customer) { %>
+            <tr>
+                <td>
+                    <%= customer.name %>
+                    <%= email $>
+                </td>
+                <td>
+                    <a href="#">DELETE</a>
+                </td>
+            </tr>
+            <% }) %>
+            </tbody>
+        </table>
+        <% } else { %>
+        <h3>Customers have not been added to the MongoDB database.  Try adding some!</h3>
+        <% } %>
+    </div>
+</div>
+</section>
+
+<footer><%- include('./partials/_footer.ejs') %></footer>
+</body>
+</html>
